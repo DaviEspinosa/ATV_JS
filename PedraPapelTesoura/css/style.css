@@ -1,46 +1,69 @@
-body{
-   background-color: #276baa;
+body {
+    background-color: #276baa;
     text-align: center;
     max-width: 1300px;
     margin: auto;
-   font-family:  'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
-ul{
+
+div#fotosResultado, img {
+    text-align: center;
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+    border-radius: 10px;
+    size: 100%;
+}
+
+ul {
     list-style-type: none;
 }
-li{
+
+li {
     display: inline;
     margin: 10px;
 }
-img{
+
+img {
     size: 100%;
 }
-img.imagem_pedra, img.imagem_papel, img.imagem_tesoura{
+
+img.imagem_pedra,
+img.imagem_papel,
+img.imagem_tesoura {
     cursor: pointer;
+    border-radius: 10px;
 }
-h1{
+
+h1 {
     font-size: 30px;
 }
-dic#fotoUsuario, img#fotoComputador{
+
+div#fotoUsuario,
+img#fotoComputador {
     margin: 5px;
 }
-#ganhador{
+
+#ganhador {
     font-size: 25px;
+    color: rgb(198, 219, 77);
 }
-#botaoJogada{
+
+#botaoJogada {
     font-family: arial;
     font-weight: bolder;
     color: #fff !important;
     font-size: 18px;
     padding: 15px 37px;
     border-radius: 10px;
-    border:  0.5px solid #000;
+    border: 0.5px solid #000;
     background-color: #329c73;
     cursor: pointer;
     -moz-border-radius: 10px;
     transition: 0.5s;
 }
-#botaoJogada:hover{
+
+#botaoJogada:hover {
     color: #fff !important;
     background-color: rgb(20, 220, 93);
     transition: 0.5s;

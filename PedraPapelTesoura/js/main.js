@@ -3,10 +3,29 @@ var tesoura = false;
 var pedra = false;
 var papel = false;
 
+const textoFlutuante = document.getElementById("ganhador");
+
+let posY = 0;
+let direction = 1;
+
+function animateText() {
+    posY += direction;
+    textoFlutuante.style.transform = `translateY(${posY}px)`;
+
+    if (posY > 20 || posY < -20) {
+        direction *= -1; // Inverte a direção quando atinge o limite
+    }
+
+    requestAnimationFrame(animateText);
+}
+
+animateText();
+
+
 //Selecionando a imagem pedra
 function selecionaPedra() {
     window.document.getElementsByClassName("imagem_pedra")
-    [0].src = "./img/pedra_marcada.png";
+    [0].src = "./img/pedra.png";
     window.document.getElementsByClassName("imagem_tesoura")
     [0].src = "./img/tesoura.png";
     window.document.getElementsByClassName("imagem_papel")
@@ -14,12 +33,12 @@ function selecionaPedra() {
 
     tesoura = false;
     pedra = true;
-    pedra = false;
+    papel = false;
 }
 //Selecionado a imagem papel
 function selecionaPapel() {
     window.document.getElementsByClassName("imagem_papel")
-    [0].src = "./img/papel_marcada.png";
+    [0].src = "./img/papel.png";
     window.document.getElementsByClassName("imagem_pedra")
     [0].src = "./img/pedra.png";
     window.document.getElementsByClassName("imagem_tesoura")
@@ -32,7 +51,7 @@ function selecionaPapel() {
 //Selecionando tesoura
 function selecionaTesoura() {
     window.document.getElementsByClassName("imagem_tesoura")
-    [0].src = "./img/tesoura_marcada.png";
+    [0].src = "./img/tesoura.png";
     window.document.getElementsByClassName("imagem_pedra")
     [0].src = "./img/pedra.png";
     window.document.getElementsByClassName("imagem_papel")
