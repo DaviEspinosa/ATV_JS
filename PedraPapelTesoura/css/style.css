@@ -1,0 +1,47 @@
+body{
+   background-color: #276baa;
+    text-align: center;
+    max-width: 1300px;
+    margin: auto;
+   font-family:  'PT Sans Narrow', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin: 10px;
+}
+img{
+    size: 100%;
+}
+img.imagem_pedra, img.imagem_papel, img.imagem_tesoura{
+    cursor: pointer;
+}
+h1{
+    font-size: 30px;
+}
+dic#fotoUsuario, img#fotoComputador{
+    margin: 5px;
+}
+#ganhador{
+    font-size: 25px;
+}
+#botaoJogada{
+    font-family: arial;
+    font-weight: bolder;
+    color: #fff !important;
+    font-size: 18px;
+    padding: 15px 37px;
+    border-radius: 10px;
+    border:  0.5px solid #000;
+    background-color: #329c73;
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    transition: 0.5s;
+}
+#botaoJogada:hover{
+    color: #fff !important;
+    background-color: rgb(20, 220, 93);
+    transition: 0.5s;
+}
