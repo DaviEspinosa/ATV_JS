@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cronometro.css">
-    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="cronometro.css" />
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="cronometro" id="cronometro">
- 
-            <h2 class="timer" id="timer">
-                00:00:00:00
-            </h2>
+        
+      <h2 class="timer" id="timer">00:00:00</h2>
 
-
-
-        <div class="actions" id="actions">
-            <div class="reset-markBNT">
-                <button class="reset" id="reset" onclick="zerarTempo()">Zerar</button>
-                <button class="mark" id="mark" onclick="mostrarHistorico()">Marcar</button>
-            </div>
-            <button class="start-stop start"id="start-stop" onclick="Ini">iniciar</button>
+      <div class="actions" id="actions">
+        <div class="reset-markBNT">
+          <button class="reset" id="reset" onclick="zerarTempo()">Zerar</button>
+          <button class="mark" id="mark" onclick="mostrarHistorico()">
+            Marcar
+          </button>
         </div>
+        <button class="start-stop start" id="start-stop" onclick="Ini">
+          iniciar
+        </button>
+      </div>
 
-        <div class="marks-list" id="mark-list"></div>
+      <div class="marks-list" id="mark-list"></div>
     </div>
-</body>
+  </body>
 
-<script src="cronometro.js"></script>
-
+  <script src="cronometro.js"></script>
 </html>
