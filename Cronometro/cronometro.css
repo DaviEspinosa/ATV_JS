@@ -9,12 +9,13 @@ body{
     align-items: center;
     height: 100vh;
     background: url(img/gif-espaço2.gif);
-    
+    background-size:40%;
+    opacity: 0.9;
 }
 .cronometro{
     background-color: black;
     color: aliceblue;
-    height: 300px;
+    height: auto;
     width: 500px;
     padding: 2em 2em 2em 2em;
     border-radius: 5px;

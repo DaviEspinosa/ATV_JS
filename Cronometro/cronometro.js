@@ -23,6 +23,7 @@ let isRunning = false; // Indica se o cronômetro está em execução / boolean
 let timer = 0; // Atualiza enquanto o cronometro está em execução
 
 // Função para formatar o tempo no formato "horas:minutos:segundos.centésimos"
+// Função para formatar o tempo no formato "horas:minutos:segundos.centésimos"
 const formatTime = (time) => {
   const centesimos = String(time % 100).padStart(2, '0');//padstart define que cada tempo contenha 2 dígitos
   const segundos = String(Math.floor((time / 100) % 60)).padStart(2, '0');
