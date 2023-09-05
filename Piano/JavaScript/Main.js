@@ -1,5 +1,5 @@
-var tecla = document.querySelectorAll('.tc');
-var somNotas =document.getElementById('somNotas');
+let tecla = document.querySelectorAll('.tc');
+let somNotas =document.getElementById('somNotas');
 
 tecla.forEach((t)=>{
     t.addEventListener('click', ()=> {
