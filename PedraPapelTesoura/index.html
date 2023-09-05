@@ -10,7 +10,6 @@
 
 <body>
     <h1>Divirta-se sem moderação:</h1>
-
     <!-- Definindo as imagens -->
     <ul>
         <li><img src="img/papel.png" alt="Papel" class="imagem_papel" onclick="selecionaPapel()"></li>
@@ -18,7 +17,14 @@
         <li><img src="img/tesoura.png" alt="Tesoura" class="imagem_tesoura" onclick="selecionaTesoura()"></li>
     </ul>
 
-    <button id="botaoJogada" onclick="realizarJogada()">Realizar Jogada</button>
+    <div class="botoes">
+        <!--Botão Realizar Jogada-->
+        <button id="botaoJogada" onclick="realizarJogada()">Realizar Jogada</button>
+        <div id="ganhador"></div>
+        <!--Botao para recarregrar a pagina-->
+        <button id="botaoResetar" type="button" onclick="recarregarPagina()">Resetar</button>
+    </div>
+
     <hr>
 
     <!-- Exibindo Resultado -->
@@ -27,7 +33,6 @@
         <img src="" id="fotoComputador">
     </div>
 
-<div id="ganhador"></div>
 
 </body>
 <script src="js/main.js"></script>

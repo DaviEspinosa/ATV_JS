@@ -4,9 +4,13 @@ body {
     max-width: 1300px;
     margin: auto;
     font-family: 'PT Sans Narrow', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-div#fotosResultado, img {
+div#fotosResultado,
+img {
     text-align: center;
     max-width: 1300px;
     margin: auto;
@@ -42,19 +46,38 @@ h1 {
 div#fotoUsuario,
 img#fotoComputador {
     margin: 5px;
+    flex-grow: 1;
+    flex-basis: auto;
 }
 
 #ganhador {
+   margin-right: 10px;
     font-size: 25px;
     color: rgb(198, 219, 77);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+    
+    
 }
 
-#botaoJogada {
+.botoes {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#botaoJogada,
+#botaoResetar {
+
+    margin-left: 10px;
+    width: 300px;
     font-family: arial;
     font-weight: bolder;
     color: #fff !important;
     font-size: 18px;
-    padding: 15px 37px;
     border-radius: 10px;
     border: 0.5px solid #000;
     background-color: #329c73;
@@ -67,4 +90,41 @@ img#fotoComputador {
     color: #fff !important;
     background-color: rgb(20, 220, 93);
     transition: 0.5s;
+}
+
+#botaoResetar:hover {
+    color: #fff !important;
+    background-color: rgb(197, 30, 30);
+    transition: 0.5s;
+}
+
+.pontosMaquina {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pontosUsuario {
+    display: flex;
+    justify-content: flex-start;
+}
+@media screen and (max-width:1024px) {
+ img{
+    width: 100px;
+ }   
+ #botaoJogada,
+#botaoResetar {
+
+    margin-left: 10px;
+    width: 100px;
+    font-family: arial;
+    font-weight: bolder;
+    color: #fff !important;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    background-color: #329c73;
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    transition: 0.5s;
+}
 }
