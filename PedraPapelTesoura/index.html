@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra|Papel|Tesoura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Divirta-se sem moderação:</h1>
+    <!-- Definindo as imagens -->
+    <ul>
+        <li><img src="img/papel.png" alt="Papel" class="imagem_papel" onclick="selecionaPapel()"></li>
+        <li><img src="img/pedra.png" alt="Pedra" class="imagem_pedra" onclick="selecionaPedra()"></li>
+        <li><img src="img/tesoura.png" alt="Tesoura" class="imagem_tesoura" onclick="selecionaTesoura()"></li>
+    </ul>
+
+    <div class="botoes">
+        <!--Botão Realizar Jogada-->
+        <button id="botaoJogada" onclick="realizarJogada()">Realizar Jogada</button>
+        <div id="ganhador"></div>
+        <!--Botao para recarregrar a pagina-->
+        <button id="botaoResetar" type="button" onclick="recarregarPagina()">Resetar</button>
+    </div>
+
+    <hr>
+
+    <!-- Exibindo Resultado -->
+    <div id="fotosResultado">
+        <img src="" id="fotoUsuario">
+        <img src="" id="fotoComputador">
+    </div>
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
