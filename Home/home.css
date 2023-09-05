@@ -7,8 +7,15 @@ body{
     flex-direction: column;
 }
 header{
+    width: 100%;
     margin-top: 0;
     height: 70px;
+    background-color: #D82148;
+    display: flex;
+    justify-content: center;
+}
+.home{
+    background-color: #D82148;
 }
 .main{
     width: 100%;
@@ -32,6 +39,7 @@ a{
     height: 80%;
     background-color: rgb(197, 196, 196);
     border-radius:10px ;
+    text-decoration: none;
 }
 a:hover{
    box-shadow: 3px 3px 10px #FFFFFF;
