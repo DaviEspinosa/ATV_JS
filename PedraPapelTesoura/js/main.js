@@ -45,12 +45,7 @@ function selecionaTesoura() {
 //Função realizarJogada
 function realizarJogada() {
     //Verificando se uma opção foi selecionada
-
-    try {
-
-    } catch (error) {
-
-    }
+    //Se for selecionada = true, caso contrario = false
     if (tesoura == false && pedra == false && papel == false) {
         let selecionandoPorPrompt = window.prompt("Por favor selecione uma opção!\n1-Pedra 2-Papel 3-Tesoura.")
         if (selecionandoPorPrompt == 1) {
@@ -62,10 +57,11 @@ function realizarJogada() {
         }
 
     } else {
+        //sorteando a jogada da maquina
         var resultadoSorteio = Math.floor(Math.random() * 3);
     }
 
-    switch (resultadoSorteio) { //Fazer animação de escolha <-----
+    switch (resultadoSorteio) { 
         case 0:
             resultadoSorteio = 'pedra'
             window.document.getElementById("fotoComputador").src = "./img/pedra.png";
