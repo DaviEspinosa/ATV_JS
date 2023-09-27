@@ -1,25 +1,27 @@
 //Definindo variaveis
+//Sendo todas false inicialmente
 var tesoura = false;
 var pedra = false;
 var papel = false;
 
+//Caso haja um click ela se torna true("válida")
 //Selecionando a imagem pedra
 function selecionaPedra() {
     window.document.getElementsByClassName("imagem_pedra")
-    [0].src = "./img/pedra.png";
+    [0].src = "./img/pedra.png";//altera a origem da imagem para pedra
     window.document.getElementsByClassName("imagem_tesoura")
     [0].src = "./img/tesoura.png";
     window.document.getElementsByClassName("imagem_papel")
     [0].src = "./img/papel.png";
 
     tesoura = false;
-    pedra = true;
+    pedra = true;//Após o click
     papel = false;
 }
 //Selecionado a imagem papel
 function selecionaPapel() {
     window.document.getElementsByClassName("imagem_papel")
-    [0].src = "./img/papel.png";
+    [0].src = "./img/papel.png";//altera a origem da imagem para papel
     window.document.getElementsByClassName("imagem_pedra")
     [0].src = "./img/pedra.png";
     window.document.getElementsByClassName("imagem_tesoura")
@@ -27,18 +29,18 @@ function selecionaPapel() {
 
     tesoura = false;
     pedra = false;
-    papel = true;
+    papel = true;//Após o click
 }
 //Selecionando tesoura
 function selecionaTesoura() {
     window.document.getElementsByClassName("imagem_tesoura")
-    [0].src = "./img/tesoura.png";
+    [0].src = "./img/tesoura.png";//altera a origem da imagem para tesoura
     window.document.getElementsByClassName("imagem_pedra")
     [0].src = "./img/pedra.png";
     window.document.getElementsByClassName("imagem_papel")
     [0].src = "./img/papel.png";
 
-    tesoura = true;
+    tesoura = true;//Após o click
     papel = false;
     pedra = false;
 }
@@ -53,7 +55,8 @@ function realizarJogada() {
         } else if (selecionandoPorPrompt == 2) {
             papel = true
         } else {
-            tesoura = true
+            tesoura = true /*deixando tesoura como true caso não seja selecionado nada, também como form de tratar um erro caso o número de escolha seja maior que 3
+             alem de servir de escolha do prompt*/
         }
 
     } else {
