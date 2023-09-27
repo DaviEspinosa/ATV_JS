@@ -42,12 +42,27 @@ img.imagem_tesoura {
 h1 {
     font-size: 30px;
 }
+hr{
+    width: 90%;
+    margin-left: 5px;
+}
 
 div#fotoUsuario,
 img#fotoComputador {
     margin: 5px;
     flex-grow: 1;
     flex-basis: auto;
+}
+#voce{
+   width: 40px; 
+}
+#computador{
+    width: 75px;
+    margin-left: 85%;
+    margin-top: -20px;
+}
+template:focus, input:focus, select:focus{
+    outline: 0;
 }
 
 #ganhador {
@@ -110,7 +125,7 @@ img#fotoComputador {
 @media screen and (max-width:1024px) {
  img{
     width: 100px;
- }   
+ }  
  #botaoJogada,
 #botaoResetar {
 
