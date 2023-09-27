@@ -19,10 +19,9 @@ btnStartStop.addEventListener("click", () => {
 
 // Variáveis para controlar o cronômetro
 let intervalId = null; // Identificador do intervalo do cronômetro
-let isRunning = false; // Indica se o cronômetro está em execução / boolean
+let Run = false; // Indica se o cronômetro está em execução / boolean
 let timer = 0; // Atualiza enquanto o cronometro está em execução
 
-// Função para formatar o tempo no formato "horas:minutos:segundos.centésimos"
 // Função para formatar o tempo no formato "horas:minutos:segundos.centésimos"
 const formatTime = (time) => {
   const centesimos = String(time % 100).padStart(2, '0');//padstart define que cada tempo contenha 2 dígitos
@@ -41,7 +40,7 @@ const updateTimerDisplay = () => {
 // Função para iniciar ou parar o cronômetro
 const toggleTimer = () => {
   const startStopButton = document.getElementById('start-stop');
-  if (isRunning) {
+  if (Run) {
     
     clearInterval(intervalId);// Permite o usuário parar o cronômetro 
     startStopButton.textContent = 'Iniciar';
@@ -53,12 +52,12 @@ const toggleTimer = () => {
     }, 10);
     startStopButton.textContent = 'Parar';
   }
-  isRunning = !isRunning;
+  Run = !Run;
 };
 
 // Função para zerar o tempo do cronômetro
 const zerarTempo = () => {
-  if (!isRunning) {
+  if (!Run) {
     timer = 0;
     updateTimerDisplay();
     const markList = document.getElementById('mark-list');
